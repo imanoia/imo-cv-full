@@ -1,0 +1,552 @@
+@charset "UTF-8";
+/*@font-face;
+
+@counter-style;
+*/
+/*comments*/
+/*
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*/
+
+body {}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+
+}
+
+.intro_container {
+    width: 40%;
+    margin: auto;
+}
+
+.header .slider {
+    background-image: url(../image/connection.jpg);
+    background-size: cover;
+    background-color: #eee;
+    height: 20em;
+}
+
+/*start nav style*/
+
+/*end nav style*/
+.header .slider .intro {
+    padding-top: 3em;
+    height: 10em;
+    text-align: center;
+    width: 100%;
+}
+
+.header .slider .intro h2 {
+    margin: 0, auto;
+    color: white;
+    background-color: darkslategrey;
+    font-size: 2em;
+    border: .1em solid white;
+    border-bottom: none;
+    margin-bottom: 2em;
+}
+
+.header .slider .intro button {
+    font-size: 2em;
+    font-style: oblique;
+    font-weight: bold;
+    color: darkslategrey;
+    border: .1em solid darkslategrey;
+    border-top: none;
+    background-color: white;
+}
+
+.header .navbar {
+    background-color: #3f3f3f;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+.header .navbar h2 span {
+    background-color: cadetblue;
+}
+
+.header .navbar ul {
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+}
+
+.header .navbar ul li {
+    float: left;
+    padding: .1em;
+}
+
+.header .navbar ul li a {
+    float: left;
+    padding: .4em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .navbar ul li.active a,
+.header .navbar ul li a:hover {
+    color: #4a7;
+}
+
+.features {
+    overflow: hidden;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.features .feat {
+    width: 33%;
+    height: auto;
+    align-content: center;
+    border-left: .1em solid #4a7;
+    background-color: white;
+    text-shadow: (1, 0, 1, 0 black);
+}
+
+.edu {
+    background-color: gainsboro;
+    overflow: hidden;
+    padding-top: 5em;
+}
+
+.edu .image {
+    height: 100%;
+    width: 40%;
+}
+
+.edu .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.edu .info {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.edu .info h2 {
+    margin-left: 1em;
+
+}
+
+.edu .info > p {
+    margin-left: 2em;
+}
+
+.edu .info > p:last-of-type {
+    margin-top: 1em;
+}
+
+.edu .info .work {
+    overflow: hidden;
+}
+
+.edu .info .work h3 {
+    color: #555;
+    margin-left: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.edu .info .work p {
+    margin-left: 2em;
+    margin-top: .5em;
+}
+
+.edu .info .work > div {
+    width: 100%;
+    min-height: 2em;
+}
+
+.edu .info .work h3 i {
+    padding-right: .5em;
+    color: #4a7;
+}
+
+/*edu style start*/
+
+.education .edu:hover {
+    box-shadow: 0 .2em 0 .2em inset #333;
+}
+
+/* start about & education style*/
+.about .section,
+.education .section {
+    border: .5em solid #4aa;
+    border-radius: 20%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin-left: 1em;
+    background-color: #eee;
+    transform: matrix(1, -0.1, 0, 1, 0, 6);
+}
+
+.about .section,
+.education .section:hover {
+    transform: none;
+    box-shadow: 0 .1em 0 .1em inset #4a7;
+    background-blend-mode: luminosity;
+}
+
+.about h5,
+.about p,
+.education h5,
+.education p {
+    color: #555;
+    text-align: center;
+}
+
+.about h5,
+.education h5 {
+    margin-top: 1em;
+}
+
+.education hr {
+    margin-top: 1em;
+}
+
+/*edu style end*/
+.skills {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    overflow: hidden;
+}
+
+/*progress*/
+.bg-success-bs {
+    background-color: darkviolet;
+}
+
+.blur:hover {
+    filter: brightness(80%);
+}
+
+/*progress*/
+.skills .skill,
+.skills .progress {
+    width: 50%;
+}
+
+.skills .skill button {
+    margin-top: 3em;
+}
+
+.skills .progress h3 {
+    text-transform: capitalize;
+    color: #555;
+    margin: .5em;
+}
+
+.skills .progress .rate {
+    background-color: gainsboro;
+    overflow: hidden;
+
+}
+
+.skills .progress .rate span {
+    background-color: #4a7;
+    overflow: hidden;
+    color: #777;
+}
+
+.skills .progress .rate span.html {
+    color: azure;
+    padding-left: 19em;
+    padding-right: 1em;
+}
+
+.skills .progress .rate span.css {
+    color: azure;
+    padding-left: 18em;
+    padding-right: 1em;
+}
+
+.skills .progress .rate span.bootstrap {
+    color: azure;
+    padding-left: 17em;
+    padding-right: 1em;
+}
+
+.skills .progress .rate span.js {
+    color: azure;
+    padding-left: 10em;
+    padding-right: 1em;
+}
+
+.skills .progress .rate span.git {
+    color: azure;
+    padding-left: 16em;
+    padding-right: 1em;
+}
+
+.skills .progress .rate span.sass {
+    color: azure;
+    padding-left: 16em;
+    padding-right: 1em;
+}
+
+.resume {
+    background-color: gainsboro;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.education {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+
+.education .edu,
+.education .exp {
+    width: 50%;
+}
+
+.education .edu {
+    height: 100%;
+}
+
+.education .exp span {
+    font-weight: bold;
+}
+
+.education hr {
+    margin-top: 1em;
+}
+
+.testmonials {
+    background-color: gainsboro;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.testmonials p {
+    font-style: italic;
+}
+
+.testmonials h3 {
+    font-style: italic;
+}
+
+.testmonials ul {
+    list-style: none;
+}
+
+.testmonials ul li {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+}
+
+.testmonials ul li button {
+    width: 1em;
+    height: 1em;
+    background-color: gainsboro;
+    border: .1em solid darkcyan;
+    border-radius: .5em;
+}
+
+.testmonials ul li button:hover,
+.testmonials ul li button.active {
+    background-color: darkcyan;
+    cursor: pointer;
+}
+
+.portfolio {
+    padding-top: 2em;
+    padding-bottom: 4em;
+    text-align: center;
+}
+
+.portfolio p {
+    padding-bottom: 2em;
+}
+
+.portfolio.prev-work {
+    overflow: hidden;
+}
+
+.portfolio.prev-work > div {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 2em;
+}
+
+.portfolio.prev-work div img {
+    margin: 1em;
+    width: 100%;
+    height: 15em;
+}
+
+.i {
+    width: 13em;
+    height: 13em;
+    border: .2em solid #ccc;
+    box-shadow: .2em .2em #355;
+    margin: .3em;
+}
+
+.i:hover {
+    opacity: 90%;
+    box-shadow: .1em .2em #833;
+}
+
+.contact {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #666;
+    overflow: hidden;
+}
+
+.contact h2 {
+    color: #fff;
+    margin-left: 1em;
+}
+
+.contact p,
+.contact a {
+    color: #cda;
+    margin-left: 2em;
+}
+
+.contact p,
+.contact a :hover {
+    color: #dfa;
+    margin-left: 2em;
+}
+
+.contact a {
+    margin-left: 0;
+    margin-top: 8em;
+}
+
+.contact address {
+    font-weight: bold;
+    color: #fff;
+    margin-left: 2em;
+}
+
+.contact p:last-child {
+    color: #cda;
+    margin-left: 2em;
+}
+
+.contact .info,
+.contact .form {
+    width: 50%;
+}
+
+.contact label,
+.contact input {
+    display: block;
+
+}
+
+.contact label h3 {
+    margin: 0;
+    margin-top: .5em;
+    color: #fff;
+}
+
+.contact input {
+    width: 100%;
+    margin-top: 1em;
+    padding: .5em;
+    color: #fff;
+    background-color: #798;
+}
+
+.contact input.massage {
+    padding-bottom: 5em;
+    margin-bottom: 1em;
+}
+
+.footer {
+    background-color: #3f3f3f;
+    color: #ddd;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.footer h3 {
+    width: 50%;
+    margin: 0;
+}
+
+.footer h3 span {
+    color: snow;
+    background-color: cadetblue;
+}
+
+.footer ul {
+    float: right;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    list-style: none;
+    display: inline-block;
+    float: inherit;
+    padding-left: .2em;
+}
+
+.footer i {
+    color: #ddd;
+}
+
+/*Start Animation*/
+.animate {
+    transform: skewX(30deg right);
+    opacity: 1;
+    animation: anim;
+    transition-duration: 3sec;
+    transition-property: transform, opacity, color;
+}
+
+@keyframes anim {}
+
+/*End Animation*/
+/*Start Framework*/
+.fl-left {
+    float: left;
+}
+
+.page-button {
+    margin-top: 1em;
+    color: #4a7;
+    font-weight: bold;
+    border: .3em solid darkslategrey;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.page-h2 {
+    color: #555;
+    text-transform: capitalize;
+}
+
+.page-p {
+    color: #777;
+    line-height: 2em;
+}
+
+/*End Framework*/
