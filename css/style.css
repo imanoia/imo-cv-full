@@ -14,7 +14,9 @@
 }
 */
 
-body {}
+body {
+    background-color: powderblue;
+}
 
 .clearfix {
     clear: both;
@@ -31,10 +33,30 @@ body {}
     margin: auto;
 }
 
+.fl-right {
+    float: right;
+}
+
+.header .top .mail i,
+.header .top .msg i {
+    font-size: 1.5em;
+}
+
+.header .top p,
+.header .top a {
+    color: #555;
+    margin-bottom: 0;
+}
+
+.header .top .msg {
+    align-content: right;
+}
+
 .header .slider {
     background-image: url(../image/connection.jpg);
     background-size: cover;
     background-color: #eee;
+    background-blend-mode: luminosity;
     height: 20em;
 }
 
@@ -99,22 +121,28 @@ body {}
 
 .header .navbar ul li.active a,
 .header .navbar ul li a:hover {
-    color: #4a7;
+    color: powderblue;
 }
 
 .features {
     overflow: hidden;
-    padding-top: 1em;
+    padding-top: .1em;
     padding-bottom: 1em;
 }
 
 .features .feat {
+    padding-top: 1em;
     width: 33%;
     height: auto;
     align-content: center;
-    border-left: .1em solid #4a7;
+    border-left: .3em solid cadetblue;
+    border-left-style: dotted;
     background-color: white;
     text-shadow: (1, 0, 1, 0 black);
+}
+
+.features .feat:hover {
+    text-shadow: .05em .05em green;
 }
 
 .edu {
@@ -174,14 +202,10 @@ body {}
 
 .edu .info .work h3 i {
     padding-right: .5em;
-    color: #4a7;
+    color: ga #4a7;
 }
 
 /*edu style start*/
-
-.education .edu:hover {
-    box-shadow: 0 .2em 0 .2em inset #333;
-}
 
 /* start about & education style*/
 .about .section,
@@ -191,15 +215,15 @@ body {}
     margin-top: 2em;
     margin-bottom: 3em;
     margin-left: 1em;
-    background-color: #eee;
+    background-color: gainsboro;
     transform: matrix(1, -0.1, 0, 1, 0, 6);
 }
 
 .about .section,
 .education .section:hover {
     transform: none;
-    box-shadow: 0 .1em 0 .1em inset #4a7;
-    background-blend-mode: luminosity;
+    box-shadow: 0 .1em 0 .1em inset #88a;
+    background-blend-mode: color-burn;
 }
 
 .about h5,
@@ -232,7 +256,7 @@ body {}
 }
 
 .blur:hover {
-    filter: brightness(80%);
+    filter: brightness(120%);
 }
 
 /*progress*/
@@ -411,7 +435,7 @@ body {}
 .contact {
     padding-top: 2em;
     padding-bottom: 2em;
-    background-color: #666;
+    background-color: #555;
     overflow: hidden;
 }
 
@@ -422,13 +446,13 @@ body {}
 
 .contact p,
 .contact a {
-    color: #cda;
+    color: #adf;
     margin-left: 2em;
 }
 
 .contact p,
 .contact a :hover {
-    color: #dfa;
+    color: #afd;
     margin-left: 2em;
 }
 
@@ -444,7 +468,7 @@ body {}
 }
 
 .contact p:last-child {
-    color: #cda;
+    color: #adf;
     margin-left: 2em;
 }
 
@@ -470,7 +494,8 @@ body {}
     margin-top: 1em;
     padding: .5em;
     color: #fff;
-    background-color: #798;
+    background-color: cadetblue;
+    /*background-color: #798;*/
 }
 
 .contact input.massage {
@@ -532,11 +557,21 @@ body {}
 
 .page-button {
     margin-top: 1em;
-    color: #4a7;
+    color: #88a;
     font-weight: bold;
     border: .3em solid darkslategrey;
     border-top-right-radius: 1em;
     border-top-left-radius: 1em;
+}
+
+.page-button:hover {
+    margin-top: 1em;
+    color: darkslategrey;
+    font-weight: bolder;
+    border: .3em solid #88a;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    transform: scale(1.2);
 }
 
 .page-h2 {
@@ -547,6 +582,10 @@ body {}
 .page-p {
     color: #777;
     line-height: 2em;
+}
+
+.page-a {
+    text-decoration: none;
 }
 
 /*End Framework*/
